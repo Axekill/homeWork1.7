@@ -112,10 +112,12 @@ public class Main {
         int year = 2023;
         int oldYear = year - 200;
         int futureYear = year + 100;
-        int i = 79;
-        while (oldYear < year && year < futureYear) {
-            oldYear = oldYear + i;
-            System.out.println(oldYear);
+        int yearComet = 0;
+        while (yearComet < futureYear) {
+            if (yearComet > oldYear) {
+                System.out.println(yearComet);
+            }
+            yearComet = yearComet + 79;
         }
     }
 
